@@ -1,0 +1,19 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "payerId": "21fa9900-524e-47a4-a9c5-aac7e9af02a7",
+    "payeeId": "30889423-7b15-493d-8bfa-3db616e0ddc2",
+    "amount": 10
+  }
+}
